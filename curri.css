@@ -1,0 +1,127 @@
+        /* === INÍCIO DO SEU ARQUIVO curri.css === */
+        
+        /* Paleta de cores em tons de azul */
+        :root {
+            --azul-escuro: #2c3e50;
+            --azul-principal: #3498db;
+            --azul-claro: #ebf5fb;
+            --fundo-pagina: #d6eaf8;
+            --branco: #ffffff;
+            --texto-cinza: #7f8c8d;
+        }
+
+        /* Estilo geral da página */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--fundo-pagina);
+            color: var(--azul-escuro);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Container principal que funciona como uma "folha de papel" */
+        .container {
+            max-width: 800px;
+            margin: 0 auto; /* Centraliza na tela */
+            background-color: var(--branco);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Estilos do Cabeçalho */
+        .cabecalho {
+            text-align: center;
+            border-bottom: 3px solid var(--azul-claro);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .cabecalho h1 {
+            margin: 0;
+            color: var(--azul-principal);
+            font-size: 2.8em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cabecalho h2 {
+            margin: 5px 0 15px 0;
+            color: var(--texto-cinza);
+            font-weight: 400;
+            font-size: 1.5em;
+        }
+
+        .informacoes-contato p {
+            margin: 5px 0;
+            font-size: 0.95em;
+            color: var(--azul-escuro);
+        }
+
+        /* Estilos das Seções (Objetivos, Formação, etc) */
+        section {
+            margin-bottom: 35px;
+        }
+
+        h3 {
+            color: var(--azul-principal);
+            border-bottom: 2px solid var(--azul-claro);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+        }
+
+        /* Estilos dos itens dentro das seções */
+        .item-curriculo {
+            margin-bottom: 20px;
+        }
+
+        .item-curriculo h4 {
+            margin: 0 0 5px 0;
+            color: var(--azul-escuro);
+            font-size: 1.1em;
+        }
+
+        .periodo {
+            margin: 0 0 10px 0;
+            font-size: 0.9em;
+            color: var(--texto-cinza);
+            font-style: italic;
+        }
+
+        .descricao {
+            margin-top: 5px;
+        }
+
+        /* Estilos para a lista de habilidades */
+        .lista-habilidades {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .lista-habilidades li {
+            background-color: var(--azul-claro);
+            color: var(--azul-principal);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            border: 1px solid #d4e6f1;
+        }
+
+        /* Responsividade para telas menores (celulares) */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .cabecalho h1 {
+                font-size: 2em;
+            }
+        }
+        /* === FIM DO SEU ARQUIVO curri.css === */
+    
